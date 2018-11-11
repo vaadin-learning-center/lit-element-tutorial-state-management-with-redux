@@ -1,0 +1,31 @@
+{
+  "createStore": {
+    "prefix": "createStore",
+    "body": [
+      "export const store = createStore(",
+      "  reducer,",
+      "  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()",
+      ");"
+    ]
+  },
+  "actionName": {
+    "prefix": "actionNames",
+    "body": [
+      "export const ADD_TODO = 'ADD_TODO';",
+      "export const UPDATE_TODO_STATUS = 'UPDATE_TODO_STATUS';",
+      "export const UPDATE_FILTER = 'UPDATE_FILTER';",
+      "export const CLEAR_COMPLETED = 'CLEAR_COMPLETED';"
+    ]
+  },
+  "importActions": {
+    "prefix": "importActions",
+    "body": [
+      "import {",
+      "  ADD_TODO,",
+      "  UPDATE_FILTER,",
+      "  UPDATE_TODO_STATUS,",
+      "  CLEAR_COMPLETED",
+      "} from './actions.js';"
+    ]
+  }
+}
